@@ -22,3 +22,7 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli train config/llava1_5_lora_sft.yaml
 
 ## Evaluation
 
+```shell
+python3 evaluation/test.py
+```
+
