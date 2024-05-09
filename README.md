@@ -42,4 +42,3 @@ python3 evaluation/generate_eval_content.py --model_name_or_path models/llava1_5
 # eval by qwen-1.5-14b-chat
 python3 evaluation/eval_qwen_score.py --input_path outputs/llava_med_zh_eval_llava1_5-7b-med.json
 ```
-
