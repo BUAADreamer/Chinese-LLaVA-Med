@@ -30,6 +30,7 @@ def main(input_path):
         data_ls = json.loads(f.read())
     score = 0
     abs_score = 0
+    gpt_score = 0
     N = len(data_ls)
     for i, data in enumerate(tqdm(data_ls)):
         for _ in range(5):
@@ -58,13 +59,16 @@ def main(input_path):
                 score_gpt4, score_model = map(int, score_str.split())
                 score += score_model / score_gpt4
                 abs_score += score_model
+                gpt_score += score_gpt4
                 break
             except Exception as e:
                 print(response)
-    score /= N
-    abs_score /= N
-    print("average relative score:", score)
+    score /= N * 10
+    abs_score /= N * 10
+    gpt_score /= N * 10
+    print("average relative score:", score * 100)
     print("average absolute score:", abs_score)
+    print("average gpt4 absolute score:", gpt_score)
 
 
 if __name__ == '__main__':

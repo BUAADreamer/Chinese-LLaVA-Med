@@ -1,5 +1,13 @@
 # Chinese-LLaVA-Med
 
+## Benchmark
+
+|          Method          | llava-med-zh-eval Qwen Score |
+| :----------------------: | :--------------------------: |
+|    GPT4 Ground Truth     |            68.26             |
+|        LLaVA-1.5         |            53.13             |
+| Chinese-LLaVA-Med-1epoch |          **58.78**           |
+
 ## Training
 
 ### Install [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
