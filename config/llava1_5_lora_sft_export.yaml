@@ -1,0 +1,14 @@
+# Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+# model
+model_name_or_path: llava-hf/llava-1.5-7b-hf
+adapter_name_or_path: saves/llava1_5-7b/lora/sft_med_bf16
+template: vicuna
+finetuning_type: lora
+visual_inputs: true
+
+# export
+export_dir: models/llava1_5-7b-med
+export_size: 2
+export_device: cpu
+export_legacy_format: false
