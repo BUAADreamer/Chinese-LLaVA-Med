@@ -2,11 +2,11 @@
 
 ## Benchmark
 
-|          Method          | llava-med-zh-eval Qwen Score |
-| :----------------------: | :--------------------------: |
-|    GPT4 Ground Truth     |            68.26             |
-|        LLaVA-1.5         |            53.13             |
-| Chinese-LLaVA-Med-1epoch |          **58.78**           |
+|          Method           | llava-med-zh-eval Qwen Score |
+|:-------------------------:| :--------------------------: |
+|     GPT4 Ground Truth     |            68.26             |
+|         LLaVA-1.5         |            53.13             |
+| [Chinese-LLaVA-1.5-Med](https://huggingface.co/BUAADreamer/Chinese-LLaVA-1.5-Med) |          **58.78**           |
 
 ## Training
 
