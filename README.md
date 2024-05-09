@@ -2,11 +2,11 @@
 
 ## Benchmark
 
-|                                      Method                                       | llava-med-zh-eval Qwen Score |
-|:---------------------------------------------------------------------------------:| :--------------------------: |
-|                                 GPT4 Ground Truth                                 |            68.26             |
-|                                   [LLaVA-1.5](https://huggingface.co/llava-hf/llava-1.5-7b-hf)                                   |            53.13             |
-| [Chinese-LLaVA-1.5-Med](https://huggingface.co/BUAADreamer/Chinese-LLaVA-1.5-Med) |          **58.78**           |
+|                                        Method                                        | llava-med-zh-eval Qwen Score |
+|:------------------------------------------------------------------------------------:| :--------------------------: |
+|                                  GPT4 Ground Truth                                   |            68.26             |
+|           [LLaVA-1.5-7B](https://huggingface.co/llava-hf/llava-1.5-7b-hf)            |            53.13             |
+| [Chinese-LLaVA-Med-1.5-7B](https://huggingface.co/BUAADreamer/Chinese-LLaVA-1.5-Med) |          **58.78**           |
 
 ## Training
 
@@ -30,6 +30,7 @@ cd Chinese-LLaVA-Med
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train config/llava1_5_lora_sft.yaml
 
 # export
+# modify your own export_hub_model_id and hf_hub_token in the config/llava1_5_lora_sft_export.yaml
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli export config/llava1_5_lora_sft_export.yaml
 ```
 
