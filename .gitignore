@@ -163,3 +163,4 @@ saves/
 temp/
 models/
 config/private*.yaml
+pics/
