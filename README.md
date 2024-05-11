@@ -30,8 +30,8 @@ cd Chinese-LLaVA-Med
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train config/llava1_5_lora_sft.yaml
 
 # full finetuning
-CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.run \
-    --nproc_per_node 3 \
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.run \
+    --nproc_per_node 2 \
     --nnodes 1 \
     --standalone \
     ../LLaMA-Factory/src/train.py config/llava1_5_full_sft.yaml

@@ -2,6 +2,7 @@
 model_name_or_path: llava-hf/llava-1.5-7b-hf
 visual_inputs: true
 #print_param_status: true
+cache_dir: ../hf_cache
 
 # method
 stage: sft

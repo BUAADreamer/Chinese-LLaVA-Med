@@ -6,6 +6,7 @@ adapter_name_or_path: saves/llava1_5-7b/lora/sft_med
 template: vicuna
 finetuning_type: lora
 visual_inputs: true
+cache_dir: ../hf_cache
 
 # export
 export_dir: models/llava1_5-7b-med
