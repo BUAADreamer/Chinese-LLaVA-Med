@@ -26,8 +26,15 @@ pip install .[bitsandbytes]
 git clone https://github.com/BUAADreamer/Chinese-LLaVA-Med.git
 cd Chinese-LLaVA-Med
 
-# finetuning
+# finetuning lora
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train config/llava1_5_lora_sft.yaml
+
+# full finetuning
+CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.run \
+    --nproc_per_node 3 \
+    --nnodes 1 \
+    --standalone \
+    ../LLaMA-Factory/src/train.py config/llava1_5_full_sft.yaml
 
 # export
 # modify your own export_hub_model_id and hf_hub_token in the config/llava1_5_lora_sft_export.yaml
