@@ -11,7 +11,7 @@ finetuning_type: full
 
 # ddp
 ddp_timeout: 180000000
-deepspeed: config/ds_z3_offload_config.json
+deepspeed: config/ds_z2_offload_config.json
 
 # dataset
 dataset: llava_med_60k
