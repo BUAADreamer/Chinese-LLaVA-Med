@@ -11,15 +11,21 @@
 ## Demo
 
 <details><summary>分析组织切片</summary>
-![](imgs/1.png)
+
+![分析组织切片](imgs/1.png)
+
 </details>
 
 <details><summary>分析胸片</summary>
-![](imgs/2.png)
+
+![分析胸片](imgs/2.png)
+
 </details>
 
 <details><summary>分析CT</summary>
-![](imgs/3.png)
+
+![分析CT](imgs/3.png)
+
 </details>
 
 ## Training your own Medical MLLM
