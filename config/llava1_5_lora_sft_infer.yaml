@@ -1,4 +1,5 @@
-model_name_or_path: models/llava1_5-7b-med
+model_name_or_path: llava-hf/llava-1.5-7b-hf
+adapter_name_or_path: saves/llava1_5-7b/lora/sft_med
 template: vicuna
+finetuning_type: lora
 visual_inputs: true
-cache_dir: ../hf_cache

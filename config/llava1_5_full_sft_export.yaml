@@ -1,10 +1,9 @@
 # Note: DO NOT use quantized model or quantization_bit when merging lora adapters
 
 # model
-model_name_or_path: llava-hf/llava-1.5-7b-hf
-adapter_name_or_path: saves/llava1_5-7b/lora/sft_med
+model_name_or_path: saves/llava1_5-7b/full/sft_med
 template: vicuna
-finetuning_type: lora
+finetuning_type: full
 visual_inputs: true
 cache_dir: ../hf_cache
 

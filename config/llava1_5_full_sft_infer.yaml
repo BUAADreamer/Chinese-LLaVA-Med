@@ -1,0 +1,3 @@
+model_name_or_path: saves/llava1_5-7b/full/sft_med
+template: vicuna
+visual_inputs: true
