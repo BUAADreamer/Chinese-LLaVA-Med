@@ -164,3 +164,4 @@ temp/
 models/
 config/private*.yaml
 pics/
+README/
